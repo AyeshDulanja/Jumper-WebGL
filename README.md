@@ -1,2 +1,2 @@
 # Jumper WebGL
- HTML5 game with Phaser framework
+ HTML5 game + Phaser framework
