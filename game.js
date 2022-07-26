@@ -48,7 +48,10 @@ function create ()
     player.setBounce(0.2);
     player.setCollideWorldBounds(true);
 
-    //define two animations called 'left' and 'right'
+    //allow the player to collide with the platforms
+    this.physics.add.collider(player, platforms);
+
+    //define animations called 'left'
     this.anims.create({
         key: 'left',
         frames: this.anims.generateFrameNumbers('dude', { start: 0, end: 3 }),
@@ -62,6 +65,7 @@ function create ()
         frameRate: 20
     });
 
+    //define animations called 'left'
     this.anims.create({
         key: 'right',
         frames: this.anims.generateFrameNumbers('dude', { start: 5, end: 8 }),
